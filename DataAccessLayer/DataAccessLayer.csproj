@@ -52,11 +52,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="EF\Models\Manager.cs" />
+    <Compile Include="EF\Models\TourPackages.cs" />
+    <Compile Include="EF\Models\Travelers.cs" />
+    <Compile Include="EF\TourDotComDbC.cs" />
+    <Compile Include="Migrations\202312292030439_initialMigration.cs" />
+    <Compile Include="Migrations\202312292030439_initialMigration.designer.cs">
+      <DependentUpon>202312292030439_initialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202312292030439_initialMigration.resx">
+      <DependentUpon>202312292030439_initialMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
