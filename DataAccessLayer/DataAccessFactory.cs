@@ -15,6 +15,9 @@ namespace DataAccessLayer
         {
             return new TourPackageRepo();
         }
-
+        public static IAuth<bool> AuthData()
+        {
+            return new ManagerRepo();
+        }
     }
 }

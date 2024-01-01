@@ -57,6 +57,7 @@
     <Compile Include="EF\Models\TourPackages.cs" />
     <Compile Include="EF\Models\Travelers.cs" />
     <Compile Include="EF\TourDotComDbC.cs" />
+    <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202312292030439_initialMigration.cs" />
     <Compile Include="Migrations\202312292030439_initialMigration.designer.cs">
@@ -70,8 +71,13 @@
     <Compile Include="Migrations\202401011752527_mngTp1tomany.designer.cs">
       <DependentUpon>202401011752527_mngTp1tomany.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202401012133599_authadd.cs" />
+    <Compile Include="Migrations\202401012133599_authadd.designer.cs">
+      <DependentUpon>202401012133599_authadd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\ManagerRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\TourPackageRepo.cs" />
   </ItemGroup>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202401011752527_mngTp1tomany.resx">
       <DependentUpon>202401011752527_mngTp1tomany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401012133599_authadd.resx">
+      <DependentUpon>202401012133599_authadd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

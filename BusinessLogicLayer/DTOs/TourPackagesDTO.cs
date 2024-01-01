@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace BusinessLogicLayer.DTOs
 {
-    internal class TourPackagesDTO
+    public class TourPackagesDTO
     {
+        public int TourPackageId { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string Duration { get; set; }
+        public double Cost { get; set; }
+        public int ManagerId { get; set; }
     }
 }

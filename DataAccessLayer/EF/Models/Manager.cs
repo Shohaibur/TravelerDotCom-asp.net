@@ -17,9 +17,11 @@ namespace DataAccessLayer.EF.Models
 
         [Required]
         public string Password { get; set; }
-
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string Address { get; set; }
+        [Required]
         public int Mobile  { get; set; }
 
         public virtual ICollection<TourPackages> TourPackages { get; set; }
