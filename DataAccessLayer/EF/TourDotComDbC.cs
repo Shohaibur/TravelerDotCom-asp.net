@@ -10,9 +10,9 @@ namespace DataAccessLayer.EF
 {
     public class TourDotComDbC : DbContext
     {
-        public DbSet<Manager>Manager { get; set; }
+        public DbSet<Manager>Managers { get; set; }
         public DbSet<Travelers>Travelers { get; set; }
         public DbSet<TourPackages>TourPackages  { get; set; }
-        public object Managers { get; internal set; }
+        
     }
 }

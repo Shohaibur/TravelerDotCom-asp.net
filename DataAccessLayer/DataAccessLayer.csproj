@@ -52,16 +52,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DataAccessFactory.cs" />
     <Compile Include="EF\Models\Manager.cs" />
     <Compile Include="EF\Models\TourPackages.cs" />
     <Compile Include="EF\Models\Travelers.cs" />
     <Compile Include="EF\TourDotComDbC.cs" />
+    <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202312292030439_initialMigration.cs" />
     <Compile Include="Migrations\202312292030439_initialMigration.designer.cs">
       <DependentUpon>202312292030439_initialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202312300653245_AddMngTpSeed1.cs" />
+    <Compile Include="Migrations\202312300653245_AddMngTpSeed1.designer.cs">
+      <DependentUpon>202312300653245_AddMngTpSeed1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\Repo.cs" />
+    <Compile Include="Repos\TourPackageRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -70,6 +78,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202312292030439_initialMigration.resx">
       <DependentUpon>202312292030439_initialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312300653245_AddMngTpSeed1.resx">
+      <DependentUpon>202312300653245_AddMngTpSeed1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
