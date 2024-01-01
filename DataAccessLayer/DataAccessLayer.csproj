@@ -66,6 +66,10 @@
     <Compile Include="Migrations\202312300653245_AddMngTpSeed1.designer.cs">
       <DependentUpon>202312300653245_AddMngTpSeed1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202401011752527_mngTp1tomany.cs" />
+    <Compile Include="Migrations\202401011752527_mngTp1tomany.designer.cs">
+      <DependentUpon>202401011752527_mngTp1tomany.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\Repo.cs" />
@@ -81,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312300653245_AddMngTpSeed1.resx">
       <DependentUpon>202312300653245_AddMngTpSeed1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202401011752527_mngTp1tomany.resx">
+      <DependentUpon>202401011752527_mngTp1tomany.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
