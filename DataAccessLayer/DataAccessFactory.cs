@@ -19,5 +19,9 @@ namespace DataAccessLayer
         {
             return new ManagerRepo();
         }
+        /*public static IRepo<Manager, int, Manager> ManagerData()
+        {
+            return new ManagerRepo();
+        }*/
     }
 }

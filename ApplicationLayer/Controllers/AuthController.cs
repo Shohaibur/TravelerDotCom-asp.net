@@ -24,12 +24,12 @@ namespace ApplicationLayer.Controllers
 
             if (isAuthenticated)
             {
-                // Authentication successful - Here you can generate and return a token or perform further actions
+                
                 return Request.CreateResponse(HttpStatusCode.OK, "Authentication successful.");
             }
             else
             {
-                // Authentication failed
+                
                 return Request.CreateResponse(HttpStatusCode.Unauthorized, "Invalid username or password");
             }
         }

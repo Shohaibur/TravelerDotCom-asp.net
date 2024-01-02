@@ -12,7 +12,7 @@ namespace DataAccessLayer.Repos
     {
         public bool Authenticate(string username, string password)
         {
-            var data =db.Managers.FirstOrDefault(m=>m.Email.Equals(username)&& m.Password.Equals(password));
+            var data = db.Managers.FirstOrDefault(m => m.Email.Equals(username) && m.Password.Equals(password));
             if (data != null)
             {
                 return true;
